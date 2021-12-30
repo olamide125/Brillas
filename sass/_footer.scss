@@ -1,0 +1,22 @@
+.footer {
+    background-color: $color-secondary;
+    grid-column: full-start/ full-end;
+    padding: 4rem 0;
+    &__nav {
+        display: grid;
+        grid-gap: 1.5rem;
+        list-style: none;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    &__item {
+        padding: 3rem;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        text-transform: uppercase;
+        &:hover {
+            transform: translateY(-4px);
+            background-color: rgba($color-secondary, .7);
+        }
+    }
+}
